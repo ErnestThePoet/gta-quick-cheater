@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:GTAQuickCheater"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary Source="uires.xaml"/>
     </Application.Resources>
 </Application>

@@ -1,0 +1,23 @@
+{
+  "version": "1.0.0",
+  "cheatSets": [
+    {
+      "name": "GTA-VC",
+      "cheats": [
+        {
+          "keys": "TAB+1",
+          "code": "LEAVEMEALONE"
+        }
+      ]
+    },
+    {
+      "name": "GTA-SA",
+      "cheats": [
+        {
+          "keys": "TAB+1",
+          "code": "ASNAEB"
+        }
+      ]
+    }
+  ]
+}

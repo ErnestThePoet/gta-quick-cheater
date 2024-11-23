@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using GTAQuickCheater.Managers;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -16,9 +17,13 @@ namespace GTAQuickCheater
     /// </summary>
     public partial class MainWindow : Window
     {
+        private ConfigManager configManager;
+
         public MainWindow()
         {
             InitializeComponent();
+            ResManager.SetContext(this);
+            configManager = new ConfigManager("cheater_config.json");
         }
     }
 }
