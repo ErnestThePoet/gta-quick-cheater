@@ -65,9 +65,9 @@ namespace GTAQuickCheater.Managers
             }
         }
 
-        public CheatConfig GetConfig()
+        public List<CheatSet> GetCheatSets()
         {
-            return cheatConfig;
+            return cheatConfig.cheatSets;
         }
     }
 }
