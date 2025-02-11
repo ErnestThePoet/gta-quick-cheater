@@ -54,6 +54,8 @@ namespace GTAQuickCheater
             {
                 lvCheatList.Items.Add(cheat);
             }
+
+            cheatManager.SetCheatItems(configManager.GetCheatSets()[cbGtaVersion.SelectedIndex].cheats);
         }
     }
 }

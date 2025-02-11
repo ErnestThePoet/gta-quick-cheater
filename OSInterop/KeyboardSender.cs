@@ -23,12 +23,12 @@ namespace GTAQuickCheater.OSInterop
 
         public void SendKey(char key)
         {
-            if (!Char.IsAsciiLetterOrDigit(key))
+            if (!char.IsAsciiLetterOrDigit(key))
             {
                 return;
             }
 
-            key = Char.ToUpper(key);
+            key = char.ToUpper(key);
 
             SendKey((byte)key);
         }
