@@ -5,8 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GTAQuickCheater"
         mc:Ignorable="d"
-        Title="{StaticResource AppWindowTitle}" Height="450" Width="800" ResizeMode="CanMinimize">
+        Title="{StaticResource AppWindowTitle}" Height="500" Width="800" ResizeMode="CanMinimize">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50px"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
 
+        <StackPanel Grid.Row="0" Orientation="Horizontal" VerticalAlignment="Center">
+            <Label Content="Select GTA Version:"/>
+            <ComboBox x:Name="cbGtaVersion" Width="200" VerticalAlignment="Center" SelectionChanged="cbGtaVersion_SelectionChanged" />
+        </StackPanel>
+
+        <ListView Grid.Row="1" x:Name="lvCheatList">
+            <ListView.View>
+                <GridView AllowsColumnReorder="true">
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=keys}" Header="Key" Width="150"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=code}" Header="Cheat Code" Width="250"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=description}" Header="Description" Width="350"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
     </Grid>
 </Window>

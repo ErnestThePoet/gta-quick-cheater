@@ -6,7 +6,13 @@
       "cheats": [
         {
           "keys": "TAB+1",
-          "code": "LEAVEMEALONE"
+          "code": "LEAVEMEALONE",
+          "description": "Clear wanted level"
+        },
+        {
+          "keys": "TAB+2",
+          "code": "GETTHEREFAST",
+          "description": "Spawn a Sabre Turbo"
         }
       ]
     },
@@ -15,7 +21,8 @@
       "cheats": [
         {
           "keys": "TAB+1",
-          "code": "ASNAEB"
+          "code": "ASNAEB",
+          "description": "Clear wanted level"
         }
       ]
     }

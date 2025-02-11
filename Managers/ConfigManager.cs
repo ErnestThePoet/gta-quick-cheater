@@ -7,13 +7,12 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Text.Json;
 using NuGet.Versioning;
+using GTAQuickCheater.Entities;
 
 namespace GTAQuickCheater.Managers
 {
     internal class ConfigManager
     {
-        public record CheatItem(string keys, string code);
-        public record CheatSet(string name, List<CheatItem> cheats);
         public record CheatConfig(string version, List<CheatSet> cheatSets);
 
         private CheatConfig cheatConfig;
