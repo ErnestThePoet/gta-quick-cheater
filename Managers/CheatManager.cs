@@ -12,18 +12,27 @@ namespace GTAQuickCheater.Managers
 {
     internal class CheatManager
     {
+        enum CheaterModifierKey
+        {
+            Tab = 0,
+            Shift = 1,
+            Ctrl = 2,
+            Alt = 4
+        }
+
         private KeyboardListener keyboardListener;
         private KeyboardSender keyboardSender;
 
-        private Dictionary<char, string> tabCheatCodeTable;
+        private Dictionary<CheaterModifierKey, Dictionary<char, string>> cheatCodeTable;
 
-        private bool isTabPressed = false;
+        private HashSet<CheaterModifierKey> pressedModifierKeys;
 
         public CheatManager()
         {
             keyboardListener = new KeyboardListener();
             keyboardSender = new KeyboardSender();
-            tabCheatCodeTable = new Dictionary<char, string>();
+            cheatCodeTable = new Dictionary<CheaterModifierKey, Dictionary<char, string>>();
+            pressedModifierKeys = new HashSet<CheaterModifierKey>();
 
             keyboardListener.OnKeyDown += OnKeyDown;
             keyboardListener.OnKeyUp += OnKeyUp;
@@ -38,42 +47,105 @@ namespace GTAQuickCheater.Managers
 
         public void SetCheatItems(List<CheatItem> cheatItems)
         {
-            tabCheatCodeTable.Clear();
+            cheatCodeTable.Clear();
             foreach(var cheatItem in cheatItems)
             {
                 var cheatKey = cheatItem.keys.Replace(" ", string.Empty).ToUpper();
-                if (cheatKey.Length != 5 || !cheatKey.StartsWith("TAB+"))
+                var splitResult = cheatKey.Split('+');
+
+                if (splitResult.Length < 2 || string.IsNullOrWhiteSpace(splitResult[1]))
                 {
                     continue;
                 }
 
-                tabCheatCodeTable.Add(char.ToUpper(cheatItem.keys[4]), cheatItem.code);
+                CheaterModifierKey? modifierKey = null;
+
+                switch (splitResult[0])
+                {
+                    case "TAB":
+                        modifierKey = CheaterModifierKey.Tab;
+                        break;
+                    case "SHIFT":
+                        modifierKey = CheaterModifierKey.Shift;
+                        break;
+                    case "CTRL":
+                        modifierKey = CheaterModifierKey.Ctrl;
+                        break;
+                    case "ALT":
+                        modifierKey = CheaterModifierKey.Alt;
+                        break;
+                }
+
+                if (modifierKey == null)
+                {
+                    continue;
+                }
+
+                if (!cheatCodeTable.ContainsKey(modifierKey.Value))
+                {
+                    cheatCodeTable[modifierKey.Value] = new Dictionary<char, string>()
+                    {
+                        { splitResult[1][0], cheatItem.code }
+                    };
+                }
+                else
+                {
+                    cheatCodeTable[modifierKey.Value][splitResult[1][0]] = cheatItem.code;
+                }
             }
+        }
+
+        private CheaterModifierKey? GetCheatModifierKey(Key key)
+        {
+            switch (key)
+            {
+                case Key.Tab:
+                    return CheaterModifierKey.Tab;
+                case Key.LeftShift:
+                case Key.RightShift:
+                    return CheaterModifierKey.Shift;
+                case Key.LeftCtrl:
+                case Key.RightCtrl:
+                    return CheaterModifierKey.Ctrl;
+                case Key.LeftAlt:
+                case Key.RightAlt:
+                    return CheaterModifierKey.Alt;
+            }
+
+            return null;
         }
 
         private void OnKeyDown(object? sender, KeyPressedArgs args)
         {
-            if (args.KeyPressed == Key.Tab)
+            var modifierKey = GetCheatModifierKey(args.KeyPressed);
+
+            if (modifierKey != null)
             {
-                isTabPressed = true;
+                pressedModifierKeys.Add(modifierKey.Value);
                 return;
             }
-            
-            if (isTabPressed && tabCheatCodeTable.ContainsKey((char)KeyInterop.VirtualKeyFromKey(args.KeyPressed)))
+
+            foreach(var pressedModifierKey in pressedModifierKeys)
             {
-                var cheatCode = tabCheatCodeTable[(char)KeyInterop.VirtualKeyFromKey(args.KeyPressed)];
-                foreach (var key in cheatCode)
+                if (cheatCodeTable.ContainsKey(pressedModifierKey) && 
+                    cheatCodeTable[pressedModifierKey].ContainsKey((char)KeyInterop.VirtualKeyFromKey(args.KeyPressed)))
                 {
-                    keyboardSender.SendKey(key);
+                    var cheatCode = cheatCodeTable[pressedModifierKey][(char)KeyInterop.VirtualKeyFromKey(args.KeyPressed)];
+                    foreach (var key in cheatCode)
+                    {
+                        keyboardSender.SendKey(key);
+                    }
                 }
             }
         }
 
         private void OnKeyUp(object? sender, KeyPressedArgs args)
         {
-            if (args.KeyPressed == Key.Tab)
+            var modifierKey = GetCheatModifierKey(args.KeyPressed);
+
+            if (modifierKey != null)
             {
-                isTabPressed = false;
+                pressedModifierKeys.Remove(modifierKey.Value);
                 return;
             }
         }
