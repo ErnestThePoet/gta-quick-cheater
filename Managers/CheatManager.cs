@@ -119,7 +119,7 @@ namespace GTAQuickCheater.Managers
 
         private void OnKeyDown(object? sender, KeyPressedArgs args)
         {
-            if(isSendingKeys)
+            if (isSendingKeys)
             {
                 return;
             }
