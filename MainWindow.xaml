@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GTAQuickCheater"
         mc:Ignorable="d"
-        Title="{StaticResource AppWindowTitle}" Height="500" Width="800" ResizeMode="CanMinimize">
+        Title="{StaticResource AppWindowTitle}" MinHeight="400" MinWidth="800" Height="500" Width="800">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="50px"/>
