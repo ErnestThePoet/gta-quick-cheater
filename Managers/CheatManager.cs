@@ -27,6 +27,8 @@ namespace GTAQuickCheater.Managers
 
         private HashSet<CheaterModifierKey> pressedModifierKeys;
 
+        private bool isSendingKeys = false;
+
         public CheatManager()
         {
             keyboardListener = new KeyboardListener();
@@ -117,6 +119,11 @@ namespace GTAQuickCheater.Managers
 
         private void OnKeyDown(object? sender, KeyPressedArgs args)
         {
+            if(isSendingKeys)
+            {
+                return;
+            }
+
             var modifierKey = GetCheatModifierKey(args.KeyPressed);
 
             if (modifierKey != null)
@@ -131,10 +138,13 @@ namespace GTAQuickCheater.Managers
                     cheatCodeTable[pressedModifierKey].ContainsKey((char)KeyInterop.VirtualKeyFromKey(args.KeyPressed)))
                 {
                     var cheatCode = cheatCodeTable[pressedModifierKey][(char)KeyInterop.VirtualKeyFromKey(args.KeyPressed)];
+
+                    isSendingKeys = true;
                     foreach (var key in cheatCode)
                     {
                         keyboardSender.SendKey(key);
                     }
+                    isSendingKeys = false;
                 }
             }
         }
