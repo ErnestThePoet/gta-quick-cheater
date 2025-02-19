@@ -21,18 +21,18 @@
         },
         {
           "keys": "TAB+4",
-          "code": "THUGSTOOLS",
-          "description": "Weapon Set 1"
-        },
-        {
-          "keys": "TAB+5",
           "code": "PROFESSIONALTOOLS",
           "description": "Weapon Set 2"
         },
         {
-          "keys": "TAB+6",
+          "keys": "TAB+5",
           "code": "NUTTERTOOLS",
           "description": "Weapon Set 3"
+        },
+        {
+          "keys": "TAB+6",
+          "code": "THUGSTOOLS",
+          "description": "Weapon Set 1"
         },
         {
           "keys": "TAB+7",
@@ -55,64 +55,34 @@
           "description": "Rainy Weather"
         },
         {
-          "keys": "TAB+U",
+          "keys": "TAB+I",
           "code": "ABITDRIEG",
           "description": "Very Cloudy Weather"
         },
         {
-          "keys": "TAB+I",
+          "keys": "TAB+O",
           "code": "CANTSEEATHING",
           "description": "Foggy Weather"
         },
         {
-          "keys": "TAB+O",
-          "code": "YOUCANTLEAVEMEALONE",
-          "description": "Invincibility"
-        },
-        {
-          "keys": "TAB+B",
-          "code": "FREEWAYFORANGELJOY",
-          "description": "Mass Bike Spawn"
-        },
-        {
-          "keys": "TAB+Q",
-          "code": "GETTHEREAMAZINGLYFAST",
-          "description": "Spawn Alt Hotring Racer"
-        },
-        {
-          "keys": "TAB+W",
-          "code": "GETTHEREQUICKLY",
-          "description": "Spawn Alt Bloodring Banger"
-        },
-        {
-          "keys": "TAB+E",
-          "code": "TRAVELINSTYLE",
-          "description": "Spawn Bloodring Banger"
-        },
-        {
-          "keys": "TAB+T",
-          "code": "THELASTRIDE",
-          "description": "Spawn Hearse"
-        },
-        {
-          "keys": "TAB+A",
-          "code": "PANZER",
-          "description": "Spawn Tank"
-        },
-        {
-          "keys": "TAB+S",
-          "code": "GETTHEREFAST",
-          "description": "Spawn Sabre Turbo"
-        },
-        {
-          "keys": "TAB+D",
+          "keys": "TAB+Z",
           "code": "GETTHEREVERYFASTINDEED",
           "description": "Spawn Hotring Racer"
         },
         {
-          "keys": "TAB+F",
-          "code": "RUBBISHCAR",
-          "description": "Spawn Trashmaster"
+          "keys": "TAB+X",
+          "code": "GETTHEREAMAZINGLYFAST",
+          "description": "Spawn Alt Hotring Racer"
+        },
+        {
+          "keys": "TAB+C",
+          "code": "GETTHEREFAST",
+          "description": "Spawn Sabre Turbo"
+        },
+        {
+          "keys": "TAB+T",
+          "code": "PANZER",
+          "description": "Spawn Tank"
         },
         {
           "keys": "TAB+G",
@@ -120,164 +90,39 @@
           "description": "Spawn Caddie"
         },
         {
-          "keys": "TAB+Z",
-          "code": "AMERICAHELICOPTER",
-          "description": "Spawn Hunter"
+          "keys": "TAB+B",
+          "code": "RUBBISHCAR",
+          "description": "Spawn Trashmaster"
         },
         {
-          "keys": "TAB+X",
-          "code": "FLYINGWAYS",
-          "description": "Spawn Aeroplane"
+          "keys": "TAB+Y",
+          "code": "THELASTRIDE",
+          "description": "Spawn Hearse"
         },
         {
-          "keys": "TAB+C",
+          "keys": "TAB+H",
           "code": "ROCKANDROLLCAR",
           "description": "Spawn Limo"
         },
         {
-          "keys": "SHIFT+1",
-          "code": "STILLLIKEDRESSINGUP",
-          "description": "Random Outfit"
-        },
-        {
-          "keys": "SHIFT+2",
-          "code": "ONEARMEDBANDIT",
-          "description": "Phil Skin"
-        },
-        {
-          "keys": "SHIFT+3",
-          "code": "IWANTBIGTITS",
-          "description": "Candy Suxxx Skin"
-        },
-        {
-          "keys": "SHIFT+4",
-          "code": "CERTAINDEATH",
-          "description": "Smoke a Cigarette"
-        },
-        {
-          "keys": "SHIFT+5",
-          "code": "FOXYLITTLETHING",
-          "description": "Mercedes Skin"
-        },
-        {
-          "keys": "SHIFT+6",
-          "code": "LOOKLIKELANCE",
-          "description": "Lance Skin"
-        },
-        {
-          "keys": "SHIFT+7",
-          "code": "PROGRAMMER",
-          "description": "Skinny Skin"
-        },
-        {
-          "keys": "SHIFT+8",
-          "code": "DEEPFRIEDMARSBARS",
-          "description": "Fat Skin"
-        },
-        {
-          "keys": "SHIFT+9",
-          "code": "WELOVEOURDICK",
-          "description": "Dick Skin"
-        },
-        {
-          "keys": "SHIFT+0",
-          "code": "MYSONISALAWYER",
-          "description": "Ken Skin"
-        },
-        {
-          "keys": "SHIFT+Q",
-          "code": "NOBODYLIKESME",
-          "description": "Hostile Pedestrians"
-        },
-        {
-          "keys": "SHIFT+W",
-          "code": "ONSPEED",
-          "description": "Speed Up Gameplay"
-        },
-        {
-          "keys": "SHIFT+E",
+          "keys": "SHIFT+T",
           "code": "BOOOOOORING",
           "description": "Slow Down Gameplay"
         },
         {
-          "keys": "SHIFT+T",
+          "keys": "SHIFT+Y",
+          "code": "ONSPEED",
+          "description": "Speed Up Gameplay"
+        },
+        {
+          "keys": "SHIFT+U",
           "code": "LIFEISPASSINGMEBY",
           "description": "Quick Clock"
         },
         {
-          "keys": "SHIFT+Y",
-          "code": "ICANTTAKEITANYMORE",
-          "description": "Suicide"
-        },
-        {
-          "keys": "SHIFT+U",
-          "code": "OURGODGIVENRIGHTTOBEARARMS",
-          "description": "Armed Pedestrians"
-        },
-        {
-          "keys": "SHIFT+I",
-          "code": "FULLCITYPEOPLEMINES",
-          "description": "Buy All Properties"
-        },
-        {
-          "keys": "SHIFT+O",
-          "code": "GRIPISEVERYTHING",
-          "description": "Handling Buff"
-        },
-        {
-          "keys": "SHIFT+P",
-          "code": "FANNYMAGNET",
-          "description": "Ladies' Man"
-        },
-        {
-          "keys": "SHIFT+A",
-          "code": "ILOOKLIKEHILARY",
-          "description": "Hilary Skin"
-        },
-        {
-          "keys": "SHIFT+S",
-          "code": "ROCKANDROLLMAN",
-          "description": "Jezz Skin"
-        },
-        {
-          "keys": "SHIFT+D",
-          "code": "CHEATSHAVEBEENCRACKED",
-          "description": "Ricardo Skin"
-        },
-        {
-          "keys": "SHIFT+F",
-          "code": "IDONTHAVETHEMONEYSONNY",
-          "description": "Sonny Skin"
-        },
-        {
-          "keys": "SHIFT+G",
+          "keys": "SHIFT+Z",
           "code": "COMEFLYWITHME",
           "description": "Flying Cars"
-        },
-        {
-          "keys": "SHIFT+H",
-          "code": "SEAWAYS",
-          "description": "Amphibious Cars"
-        },
-        {
-          "keys": "SHIFT+J",
-          "code": "AIRSHIP",
-          "description": "Flying Boats"
-        },
-        {
-          "keys": "SHIFT+K",
-          "code": "FIGHTFIGHTFIGHT",
-          "description": "Riot"
-        },
-        {
-          "keys": "SHIFT+L",
-          "code": "MIAMITRAFFIC",
-          "description": "Road Rage"
-        },
-        {
-          "keys": "SHIFT+Z",
-          "code": "GREENLIGHT",
-          "description": "All Traffic Lights Green"
         },
         {
           "keys": "SHIFT+X",
@@ -286,28 +131,13 @@
         },
         {
           "keys": "SHIFT+C",
-          "code": "WHEELSAREALLINEED",
-          "description": "Invisible Cars"
-        },
-        {
-          "keys": "SHIFT+V",
-          "code": "IWANTITPAINTEDBLACK",
-          "description": "Black Cars"
+          "code": "SEAWAYS",
+          "description": "Amphibious Cars"
         },
         {
           "keys": "SHIFT+B",
-          "code": "AHAIRDRESSERSCAR",
-          "description": "Pink Cars"
-        },
-        {
-          "keys": "SHIFT+N",
-          "code": "LOADSOFLITTLETHINGS",
-          "description": "Big Wheels"
-        },
-        {
-          "keys": "SHIFT+M",
-          "code": "CHICKSWITHGUNS",
-          "description": "Armed Female Pedestrians"
+          "code": "AIRSHIP",
+          "description": "Flying Boats"
         }
       ]
     },
