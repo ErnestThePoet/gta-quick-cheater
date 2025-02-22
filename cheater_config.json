@@ -22,47 +22,17 @@
         {
           "keys": "TAB+4",
           "code": "PROFESSIONALTOOLS",
-          "description": "Weapon Set 2"
+          "description": "Weapon Set 1"
         },
         {
           "keys": "TAB+5",
           "code": "NUTTERTOOLS",
-          "description": "Weapon Set 3"
+          "description": "Weapon Set 2"
         },
         {
           "keys": "TAB+6",
           "code": "THUGSTOOLS",
-          "description": "Weapon Set 1"
-        },
-        {
-          "keys": "TAB+7",
-          "code": "YOUWONTTAKEMEALIVE",
-          "description": "Increase Wanted Level by 2"
-        },
-        {
-          "keys": "TAB+8",
-          "code": "ALOVELYDAY",
-          "description": "Sunny Weather"
-        },
-        {
-          "keys": "TAB+9",
-          "code": "APLEASANTDAY",
-          "description": "Cloudy Weather"
-        },
-        {
-          "keys": "TAB+0",
-          "code": "CATSANDDOGS",
-          "description": "Rainy Weather"
-        },
-        {
-          "keys": "TAB+I",
-          "code": "ABITDRIEG",
-          "description": "Very Cloudy Weather"
-        },
-        {
-          "keys": "TAB+O",
-          "code": "CANTSEEATHING",
-          "description": "Foggy Weather"
+          "description": "Weapon Set 3"
         },
         {
           "keys": "TAB+Z",
@@ -105,21 +75,6 @@
           "description": "Spawn Limo"
         },
         {
-          "keys": "SHIFT+T",
-          "code": "BOOOOOORING",
-          "description": "Slow Down Gameplay"
-        },
-        {
-          "keys": "SHIFT+Y",
-          "code": "ONSPEED",
-          "description": "Speed Up Gameplay"
-        },
-        {
-          "keys": "SHIFT+U",
-          "code": "LIFEISPASSINGMEBY",
-          "description": "Quick Clock"
-        },
-        {
           "keys": "SHIFT+Z",
           "code": "COMEFLYWITHME",
           "description": "Flying Cars"
@@ -143,7 +98,103 @@
     },
     {
       "name": "GTA-SA",
-      "cheats": []
+      "cheats": [
+        {
+          "keys": "TAB+1",
+          "code": "ASNAEB",
+          "description": "Lower Wanted Level to 0"
+        },
+        {
+          "keys": "TAB+2",
+          "code": "HESOYAM",
+          "description": "Health, Armor, and Money ($250,000)"
+        },
+        {
+          "keys": "TAB+3",
+          "code": "HESOYAM",
+          "description": "Health, Armor, and Money ($250,000)"
+        },
+        {
+          "keys": "TAB+4",
+          "code": "LXGIWYL",
+          "description": "Weapon Set 1"
+        },
+        {
+          "keys": "TAB+5",
+          "code": "KJKSZPJ",
+          "description": "Weapon Set 2"
+        },
+        {
+          "keys": "TAB+6",
+          "code": "UZUMYMW",
+          "description": "Weapon Set 3"
+        },
+        {
+          "keys": "TAB+Z",
+          "code": "VROCKPOKEY",
+          "description": "Spawn Hotring Racer"
+        },
+        {
+          "keys": "TAB+X",
+          "code": "VPJTQWV",
+          "description": "Spawn Alt Hotring Racer"
+        },
+        {
+          "keys": "TAB+C",
+          "code": "OHDUDE",
+          "description": "Spawn Hunter"
+        },
+        {
+          "keys": "TAB+T",
+          "code": "WPRTON",
+          "description": "Spawn Tank"
+        },
+        {
+          "keys": "TAB+G",
+          "code": "RZHSUEW",
+          "description": "Spawn Caddie"
+        },
+        {
+          "keys": "TAB+B",
+          "code": "TRUEGRIME",
+          "description": "Spawn Trashmaster"
+        },
+        {
+          "keys": "TAB+Y",
+          "code": "ROCKETMAN",
+          "description": "Spawn Jetpack"
+        },
+        {
+          "keys": "TAB+H",
+          "code": "JUMPJET",
+          "description": "Spawn Hydra"
+        },
+        {
+          "keys": "TAB+N",
+          "code": "FLYINGTOSTUNT",
+          "description": "Spawn Stunt Plane"
+        },
+        {
+          "keys": "SHIFT+Z",
+          "code": "CHITTYCHITTYBANGBANG",
+          "description": "Flying Cars"
+        },
+        {
+          "keys": "SHIFT+X",
+          "code": "CPKTNWT",
+          "description": "Nearby Vehicles Explode"
+        },
+        {
+          "keys": "SHIFT+C",
+          "code": "GKPNMQ",
+          "description": "Amphibious Cars"
+        },
+        {
+          "keys": "SHIFT+B",
+          "code": "FLYINGFISH",
+          "description": "Flying Boats"
+        }
+      ]
     }
   ]
 }
